@@ -1,4 +1,4 @@
-FROM arm64v8/node:lts-alpine1
+FROM arm64v8/node:lts-alpine
 RUN apk add --no-cache python3
 MAINTAINER Hongcai Deng <admin@dhchouse.com>
 
