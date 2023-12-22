@@ -1,4 +1,5 @@
-FROM node:lts-alpine
+FROM arm64v8/node:lts-alpine1
+RUN apk add --no-cache python3
 MAINTAINER Hongcai Deng <admin@dhchouse.com>
 
 WORKDIR /forsaken-mail
