@@ -5,13 +5,13 @@
 'use strict';
 
 let path = require('path');
-let mailin = require('mailin');
+let nodeMailin = require('node-mailin');
 let config = require('./config');
 
-mailin.start(config.mailin);
+nodeMailin.start(config.mailin);
 
-mailin.on('error', function(err) {
+nodeMailin.on('error', function(err) {
   console.error(err.stack);
 });
 
-module.exports = mailin;
+module.exports = nodeMailin;
